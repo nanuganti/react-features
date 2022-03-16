@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 import Home from "./components/Home";
 import Users from "./components/Users";
 import RefSample from "./components/RefSample";
+import SuperProps from "./components/SuperProps";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/counter" element={<Counter />} />
           <Route path="/users" element={<Users />} />
           <Route path="/refsample" element={<RefSample />} />
+          <Route path="/superProps" element={<SuperProps />} />
         </Routes>
       </BrowserRouter>
       <footer>
