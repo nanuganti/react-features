@@ -4,10 +4,10 @@ import './App.css';
 import Counter from "./components/Counter";
 import Home from "./components/Home";
 import Users from "./components/Users";
+import RefSample from "./components/RefSample";
 
 function App() {
   return (
-    //https://randomuser.me/api
     < div className="App" >
       <header>
         My App
@@ -17,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/refsample" element={<RefSample />} />
         </Routes>
       </BrowserRouter>
       <footer>
