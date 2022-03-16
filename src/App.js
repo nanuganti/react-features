@@ -1,39 +1,27 @@
-import { React, useState } from "react";
-import axios from 'axios';
+import { React } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Counter from "./components/Counter";
+import Home from "./components/Home";
+import Users from "./components/Users";
 
 function App() {
-  const [counter, setCounter] = useState(0)
-  const [userData, setUserData] = useState()
-  const fetchUsers = async () => {
-    try {
-      const res = await axios.get("https://randomuser.me/api");
-      setUserData(JSON.stringify(res));
-    } catch (err) {
-      console.log("thereis an error", err);
-    }
-  };
-  // useEffect(async () => {
-  //   try {
-  //     const res = await axios.get("https://randomuser.me/api");
-  //     setUserData(JSON.stringify(res));
-  //   } catch (err) {
-  //     console.log("thereis an error", err);
-  //   }
-  // }, [])
-
   return (
     //https://randomuser.me/api
-    <div div className="App" >
+    < div className="App" >
       <header>
-        Counter App {counter}
+        My App
       </header>
-      <button onClick={() => { setCounter(counter + 1) }}>increment</button>
-      <button onClick={() => { fetchUsers() }}>getUsers</button>
-      <div>
-        <p>results</p>
-        <div>{userData}</div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/users" element={<Users />} />
+        </Routes>
+      </BrowserRouter>
+      <footer>
+        this is my footer
+      </footer>
     </div>
   );
 }
