@@ -1,11 +1,13 @@
 import { React, useState } from "react";
 import axios from "axios";
 const Users = () => {
-    const [userData, setUserData] = useState()
+    const [rawUserData, setRawUserData] = useState();
+    const [userInfo, setUserInfo] = useState([])
     const fetchUsers = async () => {
         try {
             const res = await axios.get("https://randomuser.me/api");
-            setUserData(JSON.stringify(res));
+            setRawUserData(JSON.stringify(res, null, 2));
+            setUserInfo(res.data.results.map((r) => { return { name: `${r.name.first}  ${r.name.last}`, pic: r.picture.large } }))
         } catch (err) {
             console.log("thereis an error", err);
         }
@@ -25,8 +27,14 @@ const Users = () => {
 
             <button onClick={() => { fetchUsers() }}>getUsers</button>
             <div>
-                <p>results</p>
-                <div>{userData}</div>
+                <p><b>Raw Results</b></p>
+                <div>{rawUserData}</div>
+            </div>
+            <div>
+                <p><b>User InfoResults</b></p>
+                {
+                    JSON.stringify(userInfo)
+                }
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ function App() {
   return (
     < div className="App" >
       <header>
-        My App
+        <b>My App</b>
       </header>
       <BrowserRouter>
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <footer>
-        this is my footer
+        <b>This is my footer</b>
       </footer>
     </div>
   );
