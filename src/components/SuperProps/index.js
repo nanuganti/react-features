@@ -1,9 +1,10 @@
 import React from "react";
 
+//It is used to call the constructor of its parent class. 
+//This is required when we need to access some variables of its parent class.
 class SuperProps extends React.Component {
     constructor(props) {
-        //It is used to call the constructor of its parent class. 
-        //This is required when we need to access some variables of its parent class.
+
         super(props)
         console.log(this.props)
         // super()
