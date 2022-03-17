@@ -4,7 +4,7 @@ import './App.css';
 import Counter from "./components/Counter";
 import Home from "./components/Home";
 import Users from "./components/Users";
-import RefSample from "./components/RefSample";
+import RefHook from "./components/RefHook";
 import SuperProps from "./components/SuperProps";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/refsample" element={<RefSample />} />
+          <Route path="/refhook" element={<RefHook />} />
           <Route path="/superProps" element={<SuperProps />} />
         </Routes>
       </BrowserRouter>

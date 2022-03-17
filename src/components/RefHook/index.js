@@ -15,7 +15,7 @@ import React, { useRef } from "react";
 //Unlike the useRef, it does not save its value between re-renders, 
 //instead creates a new instance of the ref for every re-render. 
 //Thus implying that it does not persist the existing ref between re-renders.
-const RefSample = () => {
+const RefHook = () => {
     const focusPoint = useRef(null);
     const onClickHandler = () => {
         focusPoint.current.value =
@@ -38,4 +38,4 @@ const RefSample = () => {
     )
 }
 
-export default RefSample;
+export default RefHook;
