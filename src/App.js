@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Users from "./components/Users";
 import RefHook from "./components/RefHook";
 import SuperProps from "./components/SuperProps";
+import CreateRef from "./components/CreateRef";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/counter" element={<Counter />} />
           <Route path="/users" element={<Users />} />
           <Route path="/refhook" element={<RefHook />} />
+          <Route path="/createref" element={<CreateRef />} />
           <Route path="/superProps" element={<SuperProps />} />
         </Routes>
       </BrowserRouter>
