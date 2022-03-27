@@ -7,6 +7,7 @@ import Users from "./components/Users";
 import RefHook from "./components/RefHook";
 import SuperProps from "./components/SuperProps";
 import CreateRef from "./components/CreateRef";
+import ImpureComponent from "./components/ImpureComponent";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/refhook" element={<RefHook />} />
           <Route path="/createref" element={<CreateRef />} />
           <Route path="/superProps" element={<SuperProps />} />
+          <Route path="/ImpureComponent" element={<ImpureComponent />} />
         </Routes>
       </BrowserRouter>
       <footer>
