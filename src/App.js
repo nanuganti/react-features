@@ -9,7 +9,8 @@ import SuperProps from "./components/SuperProps";
 import CreateRef from "./components/CreateRef";
 import ImpureComponent from "./components/ImpureComponent";
 import SyntheticEvent from "./components/SyntheticEvent";
-
+import ListKeys from "./components/ListKeys"
+//TODO: Add route to each new component dynamically 
 function App() {
   return (
     < div className="App" >
@@ -26,6 +27,7 @@ function App() {
           <Route path="/superProps" element={<SuperProps />} />
           <Route path="/ImpureComponent" element={<ImpureComponent />} />
           <Route path="/SyntheticEvent" element={<SyntheticEvent />} />
+          <Route path="/ListKeys" element={<ListKeys />} />
         </Routes>
       </BrowserRouter>
       <footer>
