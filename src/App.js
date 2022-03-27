@@ -10,6 +10,8 @@ import CreateRef from "./components/CreateRef";
 import ImpureComponent from "./components/ImpureComponent";
 import SyntheticEvent from "./components/SyntheticEvent";
 import ListKeys from "./components/ListKeys"
+import UnControlledComponent from "./components/UnControlledComponent"
+import ForwardRef from "./components/ForwardRef"
 //TODO: Add route to each new component dynamically 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="/ImpureComponent" element={<ImpureComponent />} />
           <Route path="/SyntheticEvent" element={<SyntheticEvent />} />
           <Route path="/ListKeys" element={<ListKeys />} />
+          <Route path="/UnControlledComponent" element={<UnControlledComponent />} />
+          <Route path="/ForwardRef" element={<ForwardRef />} />
         </Routes>
       </BrowserRouter>
       <footer>
