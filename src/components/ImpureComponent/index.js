@@ -1,4 +1,5 @@
 import React from "react";
+//https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48
 //React.PureComponent is exactly the same as React.
 //Component except that it handles the shouldComponentUpdate() method for you. 
 //When props or state changes, PureComponent will do a shallow comparison on both props and state. 
