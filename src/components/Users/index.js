@@ -25,7 +25,7 @@ const Users = () => {
         <div>
             <p>This is User Information Page</p>
 
-            <button onClick={() => { fetchUsers() }}>getUsers</button>
+            <button onClick={fetchUsers}>getUsers</button>
             <div>
                 <p><b>Raw Results</b></p>
                 <div>{rawUserData}</div>
