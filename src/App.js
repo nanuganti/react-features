@@ -8,6 +8,7 @@ import RefHook from "./components/RefHook";
 import SuperProps from "./components/SuperProps";
 import CreateRef from "./components/CreateRef";
 import ImpureComponent from "./components/ImpureComponent";
+import SyntheticEvent from "./components/SyntheticEvent";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/createref" element={<CreateRef />} />
           <Route path="/superProps" element={<SuperProps />} />
           <Route path="/ImpureComponent" element={<ImpureComponent />} />
+          <Route path="/SyntheticEvent" element={<SyntheticEvent />} />
         </Routes>
       </BrowserRouter>
       <footer>
