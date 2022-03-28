@@ -12,6 +12,7 @@ import SyntheticEvent from "./components/SyntheticEvent";
 import ListKeys from "./components/ListKeys"
 import UnControlledComponent from "./components/UnControlledComponent"
 import ForwardRef from "./components/ForwardRef"
+import Memo from "./components/Memo"
 //TODO: Add route to each new component dynamically 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/ListKeys" element={<ListKeys />} />
           <Route path="/UnControlledComponent" element={<UnControlledComponent />} />
           <Route path="/ForwardRef" element={<ForwardRef />} />
+          <Route path="/Memo" element={<Memo />} />
         </Routes>
       </BrowserRouter>
       <footer>
